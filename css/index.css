@@ -1,0 +1,601 @@
+@media only screen and (max-width: 414px),
+only screen and (max-device-width:414px) {
+	html,
+	body {
+		font-size: 22px;
+	}
+	div {
+		background-size: cover;
+	}
+}
+
+@media only screen and (max-width: 400px),
+only screen and (max-device-width:400px) {
+	html,
+	body {
+		font-size: 21.33px;
+	}
+}
+
+@media only screen and (max-width: 375px),
+only screen and (max-device-width:375px) {
+	html,
+	body {
+		font-size: 20px;
+	}
+}
+/* 适应iphoneX */
+
+@media only screen and (height:724px) {
+	html,
+	body {
+		height: 592px !important;
+		margin: 24px 0 0 0 !important;
+		font-size: 20px;
+		background-color: #000;
+	}
+	div {
+		height: 620px;
+	}
+	#video1 {
+		width: 375px !important;
+		height: 592px !important;
+	}
+	.pass4audio {
+		bottom: 2.55rem !important;
+	}
+}
+
+@media only screen and (max-width: 360px),
+only screen and (max-device-width:360px) {
+	html,
+	body {
+		font-size: 19.2px;
+	}
+}
+
+
+@media only screen and (max-width: 320px),
+only screen and (max-device-width:320px) {
+	html,
+	body {
+		font-size: 17px;
+	}
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: #000;
+	overflow: hidden;
+}
+
+div,canvas{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);  
+}
+
+div {
+	background-size: 100%;
+}
+
+.loading_img {
+	width: 9rem;
+	height: 3.6rem;
+	position: absolute;
+	top: 12rem;
+	left: 4.8rem;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_loading.gif);
+	z-index: 1;
+}
+
+.loading_font {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 16.3rem;
+	left: 8.8rem;
+	color: #fff;
+	z-index: 1;
+	font-size: xx-small;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.indexBack {
+	background-color: #000000;
+	width: 100%;
+	height: 42rem;
+	overflow: hidden;
+}
+
+#video {
+	position: absolute;
+	top: 0;
+}
+
+.wrap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.pFont {
+	position: absolute;
+	left: 4.3rem;
+	bottom: 3.8rem;
+	color: #fff;
+	font-size: small;
+}
+
+.page {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.page0 {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_endVideo.jpg);
+}
+
+.page1 {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_page1.jpg);
+}
+
+.page2 {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_page2.jpg);
+}
+
+.page3 {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_page3.jpg);
+}
+
+.page4 {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_page4.jpg);
+}
+
+.page5 {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_end.jpg);
+}
+
+.startButton {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_startButton.png);
+	position: absolute;
+	left: 5.6rem;
+	top: 21rem;
+	width: 8rem;
+	height: 3rem;
+	z-index: 1;
+	display: none;
+}
+
+.pauseButton {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_pauseButton.png);
+	position: absolute;
+	left: 7.6rem;
+	top: 25rem;
+	width: 8rem;
+	height: 2.6rem;
+	z-index: 1;
+	display: none;
+}
+
+.passTitleVideo {
+	position: absolute;
+	top: -0.5rem;
+	right: 0.5rem;
+	font-family: Microsoft YaHei;
+	font-size: 0.7rem;
+	color: #fff;
+	z-index: 1;
+}
+
+.question {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_question.png);
+	width: 3rem;
+	height: 3rem;
+	position: absolute;
+	right: 2rem;
+	top: 0.75rem;
+	z-index: 9999;
+}
+
+.cue {
+	width: 16rem;
+	height: 16rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -8rem;
+	margin-left: -8rem;
+	z-index: 2;
+}
+.cue0 {
+	width: 16rem;
+	height: 16rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -8rem;
+	margin-left: -8rem;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_cue0.png);
+	z-index: 2;
+}
+.ifCue {
+	width: 16rem;
+	height: 16rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -8rem;
+	margin-left: -8rem;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_ifCue1.png);
+	z-index: 2;
+}
+
+.ifCue0 {
+	width: 16rem;
+	height: 16rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -8rem;
+	margin-left: -8rem;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_ifCue0.png);
+	z-index: 2;
+}
+
+
+
+.useTrue {
+	width: 4rem;
+	height: 3rem;
+	position: absolute;
+	left: 3.1rem;
+	bottom: 3rem;
+}
+
+.useFalse {
+	width: 4rem;
+	height: 3rem;
+	position: absolute;
+	left: 9.2rem;
+	bottom: 3rem;
+}
+
+.paper {
+	width: 16rem;
+	height: 24rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -12rem;
+	margin-left: -8rem;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_paper3.png);
+	z-index: 99999;
+}
+
+.paperOver {
+	width: 12rem;
+	height: 1.4rem;
+	position: absolute;
+	left: 2.3rem;
+	top: 21.2rem;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_getKeys.png);
+	z-index: 4;
+}
+
+.keyNum {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_one.png);
+	width: 2.5rem;
+	height: 2.5rem;
+	position: absolute;
+	top: 1.1rem;
+	left: 8.2rem;
+}
+
+#passVideo1 {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_pass1.gif);
+}
+
+#passVideo2 {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_pass2.gif)
+}
+
+#passVideo3 {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_pass3.gif);
+}
+
+#passVideo4 {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_pass4.gif)
+}
+
+.passVideo {
+	width: 18.75rem;
+	height: 4.75rem;
+	position: absolute;
+	top: 12.71rem;
+	z-index: 9999;
+}
+
+.alert1 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_通关提示按钮1.png);
+	z-index: 2;
+}
+
+.alert2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_通关提示按钮2.png);
+	z-index: 2;
+}
+
+.alert3 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_通关提示按钮3.png);
+	z-index: 2;
+}
+
+.alert4 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_通关提示按钮4.png);
+	z-index: 2;
+}
+
+.pageShade {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_沙漠遮罩.png);
+	background-size: contain;
+	z-index: 1;
+}
+
+.machine1 {
+	width: 5.5rem;
+	height: 5.5rem;
+	position: absolute;
+	left: -0.1rem;
+	top: 6.5rem;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_hammer.png);
+}
+
+.machine2 {
+	width: 8rem;
+	height: 8rem;
+	position: absolute;
+	left: 5rem;
+	top: 5.5rem;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_saws.png);
+}
+
+.machine3 {
+	width: 3.5rem;
+	height: 3.5rem;
+	position: absolute;
+	left: 13.5rem;
+	top: 7.8rem;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_Grenade.png);
+}
+
+.machine_div {
+	width: 7.5rem;
+	height: 7.5rem;
+	position: absolute;
+	left: 5.6rem;
+	top: 17.8rem;
+}
+
+.error {
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_erroe.png);
+	position: absolute;
+	left: 10rem;
+	top: 27.5rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+.switch1 {
+	width: 100%;
+	height: 100%;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_switch1.png);
+	z-index: 1;
+}
+
+.switch2 {
+	width: 100%;
+	height: 100%;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_switch2.png);
+	z-index: 1;
+}
+
+.switch3 {
+	width: 100%;
+	height: 100%;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_switch3.png);
+	z-index: 1;
+}
+
+.switch4 {
+	width: 100%;
+	height: 100%;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_switch4.png);
+	z-index: 1;
+}
+
+.db {
+	width: 4.2rem;
+	height: 4.2rem;
+	position: absolute;
+	left: 9.3rem;
+	top: 4.6rem;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_100.png);
+	z-index: 999;
+}
+
+.dbValue {
+	width: 5.4rem;
+	height: 2rem;
+	position: absolute;
+	left: 8rem;
+	top: 15.4rem;
+}
+
+.pass4audio {
+	width: 4.45rem;
+	height: 4.45rem;
+	position: absolute;
+	bottom: 3.05rem;
+	left: 7.17rem;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_pass4audio.png);
+	background-size: cover;
+	z-index: 1;
+	-webkit-animation: scaleBtn 0.5s ease-in 2.5s both infinite alternate;
+}
+
+@-webkit-keyframes scaleBtn {
+	0% {
+		-webkit-transform: scale(1.1)
+	}
+	100% {
+		-webkit-transform: scale(1)
+	}
+}
+
+.part4Music {
+	width: 9.81rem;
+	height: 4.42rem;
+	position: absolute;
+	bottom: 7.4rem;
+	left: 4.47rem;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_page4music.gif);
+	background-size: cover;
+}
+
+.hidden {
+	display: none;
+}
+
+.pageImage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.playAgain {
+	width: 5.6rem;
+	height: 2.35rem;
+	position: absolute;
+	left: 3.1rem;
+	bottom: 1rem;
+}
+
+.share {
+	width: 5.6rem;
+	height: 2.35rem;
+	position: absolute;
+	right: 3.1rem;
+	bottom: 1rem;
+}
+
+.shareTo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-image: url(https://ofdznzfo9.qnssl.com/mwx_shareToPYQ.png)
+}
+
+/*edit*/
+
+#video1 {
+	width: 100%;
+	height: 100%;
+}
+
+.videobox {
+	background-size: 100% 100%;
+	background-color: #000;
+}
+
+#playVideo {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 99999;
+}
+
+#playVideo .play_icon {
+	width: 2.75rem;
+	height: 2.5rem;
+	background: url(https://ofdznzfo9.qnssl.com/driverless_play.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -1.37rem;
+	margin-top: -1.25rem;
+}
+
+/* 刮刮卡 */
+
+.scratch_container {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+.scratch_viewport {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	z-index: 0;
+}
+
+.scratch_picture-under {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	z-index: -1;
+}
+
+.scratch_container canvas {
+	position: absolute;
+	top: 12.65rem;
+	left: 0.7rem;
+	width: 11.37rem;
+	height: 11.37rem;
+	background-size: contain;
+	z-index: 1;
+}

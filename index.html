@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+<title>唤醒卫斯理</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="css/index.css?v=14" />
+</head>
+
+<body>
+	<audio id="pass1mp3" src="https://ofdznzfo9.qnssl.com/mwx_pass1.mp3" preload></audio>
+	<audio id="pass2mp3" src="https://ofdznzfo9.qnssl.com/mwx_pass2.mp3" preload></audio>
+	<audio id="pass3mp3" src="https://ofdznzfo9.qnssl.com/mwx_pass3.mp3" preload></audio>
+	<audio id="pass4mp3" src="https://ofdznzfo9.qnssl.com/mwx_pass4.mp3" preload></audio>
+	<audio id="BGM" src="https://ofdznzfo9.qnssl.com/mwx_BGM.mp3" preload loop></audio>
+
+	<div class="loading ">
+		<div id="loading" class="loading_img"></div>
+		<span class="loading_font">
+			<font id="loadingFont"> 0</font> %</span>
+	</div>
+
+	<!--片头视频https://ofdznzfo9.qnssl.com/mwx_film_title.mp4-->
+	<div id="playVideo">
+		<div class="play_icon"></div>
+	</div>
+<div id="startButton" class="startButton"></div>
+<div id="pauseButton" class="pauseButton"></div>
+<p class="passTitleVideo hidden"><font>跳过</font></p>
+	<div class="page publicity">
+		<div id="indexBack" class="videobox hidden">
+			<video class="" src="https://ofdznzfo9.qnssl.com/mwx_film_title1.mp4"
+				
+	            preload="true"
+	            id="video1"
+	            x5-video-player-type="h5" 
+	            poster="" 
+	            x5-video-player-fullscreen="true" 
+	            webkit-playsinline="true" 
+	            playsinline="true" 
+	            x-webkit-playsinline="true" 
+	            style="object-fit: fill;object-position: center center;"
+	        ></video> 
+		</div>
+	</div>
+
+	<!-- verse zero -->
+	<div id="page0" class="page page0 hidden">
+		<p class="pFont">(切记！你以为的不见得就是你以为的！)</p>
+	</div>
+
+	<!--verse one-->
+	<div class="page page1 hidden">
+		<div class="pageImage">
+			<div id="passVideo1" class="passVideo hidden"></div>
+<div class="cue hidden" style="background-image: url(https://ofdznzfo9.qnssl.com/mwx_cues1.png);"></div>
+			<div class="cue0 hidden"></div>
+			<div class="ifCue0 hidden"></div>
+			<div class="ifCue hidden">
+				<div class="useTrue"></div>
+				<div class="useFalse"></div>
+			</div>
+			<div class="paper hidden">
+				<div class="paperOver hidden"></div>
+			</div>
+			<div id="question1" class="question"></div>
+			<div class="keys keyNum"></div>
+			<div id="alert1" class="alert1 hidden"></div>
+			<!--沙漠遮罩-->
+			<div class="scratch_container">
+				<div class="scratch_viewport">
+					<!-- result picture -->
+					<canvas id="js-scratch-canvas"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--verse two-->
+	<div class="page page2 hidden">
+		<div>
+			<div id="passVideo2" class="passVideo hidden"></div>
+			<div class="cue hidden" style="background-image: url(https://ofdznzfo9.qnssl.com/mwx_cues2.png);"></div>
+			<div class="cue0 hidden"></div>
+			<div class="ifCue0 hidden"></div>
+			<div class="ifCue hidden">
+				<div class="useTrue"></div>
+				<div class="useFalse"></div>
+			</div>
+			<div class="paper hidden">
+				<div class="paperOver hidden"></div>
+			</div>
+			<div id="question2" class="question"></div>
+			<div class="keys keyNum"></div>
+			<!-- 那三个工具 -->
+			<div id="machine_div1" class="machine_div" style="background-image: url(https://ofdznzfo9.qnssl.com/mwx_div1.png);"></div>
+			<div id="machine_div2" class="machine_div hidden" style="background-image: url(https://ofdznzfo9.qnssl.com/mwx_div2.png)"></div>
+			<div id="machine_div3" class="machine_div hidden" style="background-image: url(https://ofdznzfo9.qnssl.com/mwx_div3.png)"></div>
+			<div id="machine_div4" class="machine_div hidden" style="background-image: url(https://ofdznzfo9.qnssl.com/mwx_div4.png)"></div>
+			<div id="machine_div5" class="machine_div hidden" style="background-image: url(https://ofdznzfo9.qnssl.com/mwx_div5.png)"></div>
+			<div id="machine_div6" class="machine_div hidden" style="background-image: url(https://ofdznzfo9.qnssl.com/mwx_div6.png)"></div>
+			<div id="machine_div7" class="machine_div hidden" style="background-image: url(https://ofdznzfo9.qnssl.com/mwx_div7.png)"></div>
+			<div class="machine1"></div>
+			<div class="machine2"></div>
+			<div class="machine3"></div>
+			<div class="error hidden"></div>
+			<div id="alert2" class="alert2 hidden"></div>
+		</div>
+	</div>
+
+	<!--verse three-->
+	<div class="page page3 hidden">
+		<div id="passVideo3" class="passVideo hidden"></div>
+		<div class="cue hidden" style="background-image: url(https://ofdznzfo9.qnssl.com/mwx_cues3.png);"></div>
+		<div class="cue0 hidden"></div>
+		<div class="ifCue0 hidden"></div>
+		<div class="ifCue hidden">
+			<div class="useTrue"></div>
+			<div class="useFalse"></div>
+		</div>
+		<div class="paper hidden">
+			<div class="paperOver hidden"></div>
+		</div>
+		<div id="question3" class="question"></div>
+		<div class="keys keyNum"></div>
+		<!--电闸-->
+		<div class="switch1"></div>
+		<div class="switch2 hidden"></div>
+		<div class="switch3 hidden"></div>
+		<div class="switch4 hidden"></div>
+		<div id="alert3" class="alert3 hidden"></div>
+	</div>
+
+	<!--verse four-->
+	<div class="page page4 hidden">
+		<div id="passVideo4" class="passVideo hidden"></div>
+		<div class="cue hidden" style="background-image: url(https://ofdznzfo9.qnssl.com/mwx_cues4.png);"></div>
+		<div class="cue0 hidden"></div>
+		<div class="ifCue0 hidden"></div>
+		<div class="ifCue hidden">
+			<div class="useTrue"></div>
+			<div class="useFalse"></div>
+		</div>
+		<div class="paper hidden">
+			<div class="paperOver hidden"></div>
+		</div>
+		<div id="question4" class="question"></div>
+		<div class="keys keyNum"></div>
+		<!--分贝的那个100-->
+		<div id="db" class="db"></div>
+		<div id="dbValue" class="dbValue"></div>
+		<div id="pass4audio" class="pass4audio"></div>
+		<div class="part4Music"></div>
+		<div id="alert4" class="alert4 hidden"></div>
+	</div>
+
+	<!--verse five-->
+	<div class="page page5 hidden">
+		<div class="shareTo hidden"></div>
+		<div class="playAgain"></div>
+		<div class="share"></div>
+	</div>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/index.js?v=49"></script>
+	<script src="js/Scratch.js"></script>
+
+	<script type="text/javascript">
+
+		// 沙漠中刮刮卡的效果
+		$(function(){
+			var scratch = new Scratch({
+				canvasId: 'js-scratch-canvas',
+				imageBackground: '',
+				pictureOver: './images/shade1.jpg',
+				cursor: {
+					png: '',
+					cur: './images/piece.cur',
+					x: '20',
+					y: '17'
+				},
+				radius: 60,
+				nPoints: 100,
+				percent: 20,
+				callback: function () {
+					$("#pageShade").addClass("hidden");
+					setTimeout(function () {
+						$("#alert1").removeClass('hidden')
+					}, 500)
+				},
+				pointSize: {
+					x: 3,
+					y: 3
+				}
+			});
+		})
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "//hm.baidu.com/hm.js?29fe37985b5cd2a341e821b85502b2fe";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+
+		document.body.addEventListener('touchmove', function (e) {
+	      e.preventDefault(); 
+	    }, {passive: false});
+	</script>
+
+</body>
+
+</html>
